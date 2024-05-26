@@ -5,9 +5,9 @@ import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 
 export function Header() {
   return (
-    <header className="h-16 flex items-center border-b px-5 overflow-x-auto">
+    <header className="flex h-16 items-center overflow-x-auto border-b px-5">
       <Button variant="ghost" asChild>
-        <Link href="/" className="font-semibold text-xl">
+        <Link href="/" className="text-xl font-semibold">
           <Image src="/logo.svg" height={50} width={50} alt="Logo" />
         </Link>
       </Button>
