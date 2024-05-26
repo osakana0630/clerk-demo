@@ -14,10 +14,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="ja">
-        <body className={cn(inter.className, "h-dvh ")}>
-          <Header />
-          {children}
-        </body>
+        <body className={cn(inter.className, "h-dvh")}>{children}</body>
       </html>
     </ClerkProvider>
   );
