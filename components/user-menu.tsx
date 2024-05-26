@@ -39,47 +39,16 @@ export async function UserMenu() {
             </div>
           </div>
           <Separator />
-          <div className="flex">
-            <div className="flex flex-col gap-2">
-              <Button variant="ghost" asChild>
-                <Link href="#">
-                  <Music size={20} className="mr-3" />
-                  リンク1
-                </Link>
-              </Button>
-              <Button variant="ghost" asChild>
-                <Link href="#">
-                  <Music size={20} className="mr-3" />
-                  リンク2
-                </Link>
-              </Button>
-              <Button variant="ghost" asChild>
-                <Link href="#">
-                  <Music size={20} className="mr-3" />
-                  リンク3
-                </Link>
-              </Button>
-            </div>
-            <span className="flex-1" />
-            <div className="flex flex-col gap-2">
-              <Button variant="ghost" asChild>
-                <Link href="#">
-                  <Music size={20} className="mr-3" />
-                  リンク4
-                </Link>
-              </Button>
-              <Button variant="ghost" asChild>
-                <Link href="#">
-                  <Music size={20} className="mr-3" />
-                  リンク5
-                </Link>
-              </Button>
-              <Button variant="ghost" asChild>
-                <Link href="#">
-                  <Music size={20} className="mr-3" />
-                  リンク6
-                </Link>
-              </Button>
+          <div className="flex h-[150px]">
+            <div className="flex flex-col flex-wrap gap-2">
+              {Array.from({ length: 6 }).map((_, index) => (
+                <Button key={index} variant="ghost" asChild>
+                  <Link href="#">
+                    <Music size={20} className="mr-3" />
+                    リンク{index + 1}
+                  </Link>
+                </Button>
+              ))}
             </div>
           </div>
         </div>
