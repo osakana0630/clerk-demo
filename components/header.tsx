@@ -12,7 +12,6 @@ export function Header() {
         </Link>
       </Button>
       <span className="flex-1" />
-
       <div className="flex gap-3">
         <SignedOut>
           <SignInButton>
